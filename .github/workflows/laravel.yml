@@ -35,4 +35,6 @@ jobs:
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
+        DB_DATABASE: database/database.sqlite
+        DB_FOREIGN_KEYS: true
       run: vendor/bin/phpunit
